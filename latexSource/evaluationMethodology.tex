@@ -1,0 +1,22 @@
+In this paper, we described a possible solution of sharing realistic travel experience for people with any kind of mobility problem. In this section we describe the methodology, how to evaluate whether out control setting is user friendly and then we want to estimate overall user satisfaction.
+
+\vspace{40pt}
+\subsection{Control device preferences}
+Comparison of controlling headset and a classic joystick device has been done in \cite{mangina2016drones} with the results that a headset is more intuitive and has a better learning curve for amateur drone pilots. But their testing does not fully follow our proposed concept, because there were using there two ways of controlling with direct eye contact with the controlled drone. For our purposes, we need to update the test condition so that pilots can see only what is displayed to the VR device.
+
+Each participated in the test group will have to pilot two flights: one with the classic hardware controller and one with the headset controller, but with the same trajectory description. The instructions are to take off, follow a predefined trajectory around a moving object and land on a predefined spot. We considered several approaches how to evaluate the effectiveness of the controlling systems. We see total time of a flight and precision (stability, fluency, ...) as the most important features, but we also want to visually evaluate emotional reactions during of tested subjects and surveys which are made afterwards. We also can use a cam and image processing to identify marks of frustration or stress.
+
+This test should be taken several times to identify learning curve of both controlling devices. Or we can add a condition, that pilot has to participate in a conversation so we can evaluate, how good are pilot using one of other control way with side human interaction. This aspect is also very important, since we want to provide maximum human friendly travel experience.
+
+\subsection{User satisfaction}
+The second evaluation focuses on user overall satisfaction with our solution. It is really hard mission to estimate comparable metric for this experiment since everybody has perception. We agreed there is no was a controlled laboratory experiment could have a proving value, so the best way is to analyze usage of several free-give-away prototypes. People for this test have to be selected wisely, such people has to travel a lot and also has to have some relatives who would like to travel with and but cannot. It means a background check i needed. The advantage of this real world experiment is that it can even continue after the prototype testing, we could monitor our user with their awareness to continuously improving our services.
+
+Possibly monitored features (using term traveller for a person who has receiving mobile device and term pilot for person who remotely control the connected drone using our proposed headset):
+\begin{itemize}
+  \item General statistical observation like usage per time period, average time of usage, number of different users of a prototype, ...
+  \item After every session there will be an optional survey in which pilots and travellers can express their feeling about their last session. The survey may contain questions related to session itself like connection quality, control delaying, ...; to the place where pilot was present (session took place) like how propriety is that place, how hard is to navigate there, ...; and to users mood and expectations. To make it easier and faster, questions should be able to answer using a predefined scale.
+  \item Since our solution includes voice transmission between a traveller and pilot, we can analyze tones of their voices to determine mood of their conversation. 
+  \item One of the main advantages of our solution is direct interaction between a traveller and a pilot, it means that the camera which is placed on the drone will sometimes capture traveller's face. Then we can use image processing to determine traveller excitement of sharing that moment. 
+\end{itemize}
+
+Collecting this information we can create a big dataset. It is unlabeled data in the beginning, so we would need to label some of them by hands. After that we can use modern machine learning methods to label newly collected data.

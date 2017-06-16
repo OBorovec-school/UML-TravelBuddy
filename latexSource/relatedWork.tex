@@ -1,0 +1,50 @@
+Virtual reality as we know it today is around since 1990's, when in 1991 Sega released its first VR headset \cite{sega2004headset}. Since then a lot of research has been done however VR headsets were sidelined. In 2012 Oculus presented modern headset for consumers and thanks to the greater computing power of today's computers and smartphones, the idea of virtual reality became popular again.
+
+In 2013 DJI released their first consumer-grade drone with integrated camera. Until then drones were large, expensive and available to mainly to professionals. Since then many companies have become more focused on drones and they have developed rapidly since then.
+
+In further sections we will discuss and compare different existing solutions that include drones, virtual reality or virtual travelling.
+
+\bgroup
+\def\arraystretch{1.5}
+\begin{table*}[t]
+\centering
+\begin{tabular}[c]{r|p{2cm}lllp{3cm}}
+                         & DJI                         & YouVisit   & Facebook VR & Viooa                        & Limited mobility          \\ \hline
+Data transfer technology & WiFi and Lightbridge        & Internet   & N/A         & N/A                          & Wifi (802.11n)            \\
+Range                    & up to 7km                   & $\infty$   & N/A         & N/A                          & $\sim$50m                 \\
+Latency                  & 110ms                       & Depends    & N/A         & N/A                          & $\sim$Good enough         \\
+Camera                   & wideangle camera on gimball & 360\degree & N/A         & 360\degree$\times$180\degree & N/A                       \\
+VR headset               & DJI Goggles                 & Any        & Oculus Rift & No                           & Oculus Rift               \\
+Controlling camera       & Yes, head movement          & Partialy   & N/A         & Software based               & No                        \\
+Controlling drone        & Remote controller           & N/A        & N/A         & N/A                          & Yes, 6 DOF, head movement
+\end{tabular}
+\caption{Comparison of available solutions}
+\label{solutions-comparison}
+\end{table*}
+\egroup
+
+\subsection{YouVisit}
+Website called YouVisit\footnote{\url{https://www.youvisit.com}} is a virtual travelling service. They provide virtual tours to the different parts of the world through 360\degree video footage. Users can look around in the scene by using their mouse in the web browser or they can use any compatible VR headset.
+
+\subsection{Google Streetview}
+Google Maps\footnote{\url{https://maps.google.com}} provide a feature for exploring different locations through 360\degree camera which is mounted on the roof of the car. Users are able to move on the map and look around. They have implementation for web browser, controlled by mouse and also a version for phone-based VR headsets.
+
+\subsection{DJI Goggles}
+DJI is currently the leader in consumer and professional drones production. Their product called DJI Goggles\footnote{\url{https://www.dji.com/dji-goggles}} is actually wireless remote screen for the drone's camera. The camera is mounted on a small gimbal on the bottom of the drone and its movement is controlled by the sensors placed in the goggles. Drone itself is controlled by another person with the remote controller or it can fly in one of the many fully automatic modes. The advantage of this solution is relatively small latency ($\sim$110ms), thanks to their technology Lightbridge. On the other hand the signal range is quite limited (units of kilometers), therefore it cannot be fully used for travelling purposes.
+
+\subsection{Facebook VR}
+Since Facebook bough Oculus in 2014 it has become one of the major companies responsible for the recent research in the field of VR. They do not provide any complex solution for our proposed problem, but they have a variety of devices and technologies that can be used.
+
+At first Facebook provides solution for transferring 360\degree video by decreasing an amount of transferred data by increasing compression of the image out of the user's viewport \cite{facebook2016videoencoding}. This solution is based on mapping an image onto pyramids and reduces transferred data for about 80\%. 
+
+Secondly, they produce state-of-the-art VR headset Oculus Rift, which can be easily connected to the computer and be used as a display for the drone footage. Thanks to the integrated sensors (accelerometer, magnetometer and gyroscope) it can provide the necessary data for controlling the drone.
+
+\subsection{Viooa}
+Viooa is 360\degree camera\footnote{\url{http://www.viooa.com/}}, primarily to be used for drones. It reduces the necessity of a gimbal, which is used for current drones to stabilize the image and pan around with the camera. Their implementation is capable of advanced 3D mapping and stabilizing the footage without using any moving parts.
+
+\subsection{Streaming for people with limited mobility}
+Team behind this paper proposed solution for people with limited mobility. They used Oculus Rift headset and Wii Nunchucks to monitor head movements and used values from those sensors to navigate the drone \cite{mangina2016drones}. They run a couple of experiments with different setups and end up with a solution based on the Oculus Rift. The downside of this implementation is the range of the drone. Their drone uses just the WiFi and to maintain latency low enough to operate drone comfortably, the range of the drone is approximately 50 meters from the signal source\cite{mangina2016drones}.
+
+\subsection{Comparison}
+The best solution so far for the drone with the VR headset is probably DJI Goggles, which provides a lot of functionality for controlling camera and the drone. On the other hand the best solution for actual travelling is YouVisit, where users can see what is happening thousands kilometers away from them. Other solutions solve just smaller parts of the more complex problem. Features of current solutions are shown and compared in table \ref{solutions-comparison}
+

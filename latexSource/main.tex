@@ -1,0 +1,61 @@
+\documentclass{vldb}
+\usepackage{graphicx}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{gensymb}
+\usepackage{balance}  % for  \balance command ON LAST PAGE  (only there!)
+\usepackage[multiple]{footmisc} %multiple footnotes
+\usepackage{chngcntr}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+
+
+\begin{document}
+
+% ****************** TITLE ****************************************
+
+\title{Travel Buddy: Exploring the world with remotely controlled drones}
+
+\numberofauthors{2}
+
+\author {
+\alignauthor
+Ondrej Borovec\\
+       \affaddr{Czech Technical University in Prague}\\
+       \affaddr{Prague, The Czech Republic}\\
+       \email{o.borovec@gmail.com}
+\alignauthor
+Jan Zaloudek\\
+       \affaddr{University of Massachusetts in Lowell}\\
+       \affaddr{Lowell, MA}\\
+       \email{Jan\_Zaloudek@student.uml.edu}
+}
+
+\date{30 April 2017}
+
+\maketitle
+\begin{abstract}
+Tourism and and travel industry makes still growing field which contributes a lot of money to Global GDP. Even thought exploring of the world has never been easier there are still many people for who it is too complicated to use this opportunity. We are proposing a solution based on combination of remotely controlled drone and VR which maximizes impression of travelling to people with limited mobility or with any kind of problem which stops them from sharing a special remote moment of their relatives and friend. We are also focused on evaluation of user satisfaction  for further  service development.
+\end{abstract}
+
+
+
+
+\section{Problem Statement}
+\input{problemStatement}
+
+
+\section{Related Work}
+\input{relatedWork}
+
+
+\section{Proposed Solution}
+\input{proposedSolution}
+
+\section{Evaluation Methodology}
+\input{evaluationMethodology}
+
+\bibliographystyle{abbrv}
+\bibliography{biblio}  
+
+
+\end{document}
